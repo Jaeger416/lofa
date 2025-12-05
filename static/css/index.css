@@ -116,10 +116,16 @@ body {
 /* Publication Content Styling */
 .publication-title {
     font-family: 'Inter', sans-serif !important;
-    font-weight: 800 !important;
+    font-weight: 650 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
+
+    font-size: 2.6rem !important; 
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .publication-banner {
@@ -751,3 +757,46 @@ a:focus {
 
 
 
+.aff {
+  position: relative;
+  padding-left: 0.7em;   /* 给左侧留空间 */
+}
+
+.aff .idx {
+  position: absolute;
+  left: 0;
+  top: -0.4em;           /* 控制序号的高度（越小越往上） */
+  font-size: 0.7em;      /* 序号大小 */
+  font-weight: 600;
+}
+
+.lofa-highlight {
+  color: #FF8C00; /* 你想要的颜色 */
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px #FF8C00;
+}
+
+
+/* Method Overview 区块整体上下留白 */
+.method-overview {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* 方法图样式：大 + 居中 */
+.method-img {
+  display: block;
+  width: 100%;          /* 占满 container 宽度 */
+  max-width: 1400px;    /* 你可以改成 1600 / 1800，看图有多大 */
+  margin: 0 auto;       /* 居中 */
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+/* 描述文字 */
+.method-overview-description {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
