@@ -8,7 +8,8 @@
   <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="LoFA: Learning to Predict Personalized Prior for Fast Adaptation of Visual Generative Models">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="Personalizing visual generative models to meet specific user needs has gained increasing attention, yet current methods like Low-Rank Adaptation (LoRA) remain impractical due to their demand for task-specific data and lengthy optimization. While a few hypernetwork-based approaches attempt to predict adaptation weights directly, they struggle to map fine-grained user prompts to complex LoRA distributions, limiting their practical applicability.
+To bridge this gap, we propose LoFA, a general framework that efficiently predicts personalized priors for fast model adaptation. We first identify a key property of LoRA: structured distribution patterns emerge in the relative changes between LoRA and base model parameters. Building on this, we design a two-stage hypernetwork: first predicting sparse response maps that capture key adaptation regions, then using these to guide final LoRA weight prediction. Extensive experiments demonstrate that our method consistently predicts high-quality personalized priors within seconds, across multiple tasks and user prompts, even outperforming conventional LoRA that requires hours of processing.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="Low Rank Adaption, Personalized Prior, Visual Generative Model">
   <!-- TODO: List all authors -->
@@ -23,19 +24,21 @@
   <!-- TODO: Same as paper title above -->
   <meta property="og:title" content="LoFA: Learning to Predict Personalized Prior for Fast Adaptation of Visual Generative Models">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="Personalizing visual generative models to meet specific user needs has gained increasing attention, yet current methods like Low-Rank Adaptation (LoRA) remain impractical due to their demand for task-specific data and lengthy optimization. While a few hypernetwork-based approaches attempt to predict adaptation weights directly, they struggle to map fine-grained user prompts to complex LoRA distributions, limiting their practical applicability.
+To bridge this gap, we propose LoFA, a general framework that efficiently predicts personalized priors for fast model adaptation. We first identify a key property of LoRA: structured distribution patterns emerge in the relative changes between LoRA and base model parameters. Building on this, we design a two-stage hypernetwork: first predicting sparse response maps that capture key adaptation regions, then using these to guide final LoRA weight prediction. Extensive experiments demonstrate that our method consistently predicts high-quality personalized priors within seconds, across multiple tasks and user prompts, even outperforming conventional LoRA that requires hours of processing.">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:url" content="https://jaeger416.github.io/lofa">
   <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image" content="https://jaeger416.github.io/lofa/static/images/teaser.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
   <meta property="article:author" content="FIRST_AUTHOR_NAME">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Low Rank Adaption">
+  <meta property="article:tag" content="Personalized Prior">
+  <meta property="article:tag" content="Visual Generative Model">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -46,7 +49,8 @@
   <!-- TODO: Same as paper title above -->
   <meta name="twitter:title" content="PAPER_TITLE">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="twitter:description" content="Personalizing visual generative models to meet specific user needs has gained increasing attention, yet current methods like Low-Rank Adaptation (LoRA) remain impractical due to their demand for task-specific data and lengthy optimization. While a few hypernetwork-based approaches attempt to predict adaptation weights directly, they struggle to map fine-grained user prompts to complex LoRA distributions, limiting their practical applicability.
+To bridge this gap, we propose LoFA, a general framework that efficiently predicts personalized priors for fast model adaptation. We first identify a key property of LoRA: structured distribution patterns emerge in the relative changes between LoRA and base model parameters. Building on this, we design a two-stage hypernetwork: first predicting sparse response maps that capture key adaptation regions, then using these to guide final LoRA weight prediction. Extensive experiments demonstrate that our method consistently predicts high-quality personalized priors within seconds, across multiple tasks and user prompts, even outperforming conventional LoRA that requires hours of processing.">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
@@ -115,7 +119,8 @@
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "LoFA: Learning to Predict Personalized Prior for Fast Adaptation of Visual Generative Models",
-    "description": "LoFA: Learning to Predict Personalized Prior for Fast Adaptation of Visual Generative Models",
+    "description": "Personalizing visual generative models to meet specific user needs has gained increasing attention, yet current methods like Low-Rank Adaptation (LoRA) remain impractical due to their demand for task-specific data and lengthy optimization. While a few hypernetwork-based approaches attempt to predict adaptation weights directly, they struggle to map fine-grained user prompts to complex LoRA distributions, limiting their practical applicability.
+To bridge this gap, we propose LoFA, a general framework that efficiently predicts personalized priors for fast model adaptation. We first identify a key property of LoRA: structured distribution patterns emerge in the relative changes between LoRA and base model parameters. Building on this, we design a two-stage hypernetwork: first predicting sparse response maps that capture key adaptation regions, then using these to guide final LoRA weight prediction. Extensive experiments demonstrate that our method consistently predicts high-quality personalized priors within seconds, across multiple tasks and user prompts, even outperforming conventional LoRA that requires hours of processing.",
     "author": [
       {
         "@type": "Person",
@@ -191,16 +196,17 @@
       "@type": "Organization",
       "name": "CONFERENCE_OR_JOURNAL_NAME"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "url": "https://jaeger416.github.io/lofa",
+    "image": "https://jaeger416.github.io/lofa/static/images/teaser.png",
+    "keywords": ["Low Rank Adaption", "Personalized Prior", "Visual Generative Model"],
+    "abstract": "Personalizing visual generative models to meet specific user needs has gained increasing attention, yet current methods like Low-Rank Adaptation (LoRA) remain impractical due to their demand for task-specific data and lengthy optimization. While a few hypernetwork-based approaches attempt to predict adaptation weights directly, they struggle to map fine-grained user prompts to complex LoRA distributions, limiting their practical applicability.
+To bridge this gap, we propose LoFA, a general framework that efficiently predicts personalized priors for fast model adaptation. We first identify a key property of LoRA: structured distribution patterns emerge in the relative changes between LoRA and base model parameters. Building on this, we design a two-stage hypernetwork: first predicting sparse response maps that capture key adaptation regions, then using these to guide final LoRA weight prediction. Extensive experiments demonstrate that our method consistently predicts high-quality personalized priors within seconds, across multiple tasks and user prompts, even outperforming conventional LoRA that requires hours of processing.",
     "citation": "BIBTEX_CITATION_HERE",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://jaeger416.github.io/lofa"
     },
     "about": [
       {
@@ -250,33 +256,57 @@
             <h1 class="title is-1 publication-title">LoFA: Learning to Predict Personalized Prior for Fast Adaptation of Visual Generative Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=mlu1Oo4AAAAJ&hl=en" target="_blank">Yiming Hao</a><sup>1</sup><sup>*</sup>,</span>
+              <div>
                 <span class="author-block">
-                  <a href="https://mutianxu.github.io" target="_blank">Mutian Xu</a><sup>1</sup><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://github.com/hugoycj" target="_blank">Chongjie Ye</a><sup>1,2</sup>,</span>
-                  <span class="author-block">
-                  <a href="#" target="_blank">Jie Qin</a><sup>1</sup>,</span>
-                  <span class="author-block">
-                  <a href="https://shunlinlu.github.io/" target="_blank">Shunlin Lu</a><sup>3</sup>,</span>
-                  <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yipeng Qin</a><sup>4</sup>,</span>
-                  <span class="author-block">
-                  <a href="https://gaplab.cuhk.edu.cn/" target="_blank">Xiaoguang Han</a><sup>1,2</sup>
-                  </span>
-                  </div>
+                  <a href="https://scholar.google.com/citations?user=mlu1Oo4AAAAJ&hl=en" target="_blank">Yiming Hao</a><sup>1</sup><sup>*</sup>,
+                </span>
 
+                <span class="author-block">
+                  <a href="https://mutianxu.github.io" target="_blank">Mutian Xu</a><sup>1</sup><sup>*</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://github.com/hugoycj" target="_blank">Chongjie Ye</a><sup>1,2</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="#" target="_blank">Jie Qin</a><sup>1</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://shunlinlu.github.io/" target="_blank">Shunlin Lu</a><sup>4</sup>,
+                </span>
+              </div>
+
+              <!-- 第二行：后 2 位作者 -->
+              <div>
+                <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yipeng Qin</a><sup>5</sup>,
+                </span>
+
+                <span class="author-block">
+                  <!-- 通讯作者加 † -->
+                  <a href="https://gaplab.cuhk.edu.cn/" target="_blank">Xiaoguang Han</a><sup>1,2,3</sup><sup>†</sup>
+                </span>
+              </div>
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">
-                      <span class="aff"><span class="idx">1</span> SSE, CUHKSZ</span>&nbsp;&nbsp;
-                      <span class="aff"><span class="idx">2</span> FNii-Shenzhen</span>&nbsp;&nbsp;
-                      <span class="aff"><span class="idx">3</span> SDS, CUHKSZ</span>&nbsp;&nbsp;
-                      <span class="aff"><span class="idx">4</span> Cardiff University</span>
+                    <div class="author-block" style="display: block; text-align: center; line-height: 1.6;">
+                      <div>
+                        <span class="aff"><span class="idx">1</span> SSE, CUHKSZ</span>&nbsp;&nbsp;
+                        <span class="aff"><span class="idx">2</span> FNii-Shenzhen</span>
+                      </div>
+                      <div>
+                        <span class="aff"><span class="idx">3</span> Guangdong Provincial Key Laboratory of Future Networks of Intelligence, CUHKSZ</span>
+                      </div>
+                      <div>
+                        <span class="aff"><span class="idx">4</span> SDS, CUHKSZ</span>&nbsp;&nbsp;
+                        <span class="aff"><span class="idx">5</span> Cardiff University</span>
+                      </div>
+                    </div>
+                    <span class="eql-cntrb">
+                      <small><br><sup>*</sup>Indicates Equal Contribution</small>
                     </span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+
                   </div>
 
                   <div class="column has-text-centered">
