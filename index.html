@@ -261,7 +261,7 @@ To bridge this gap, we propose LoFA, a general framework that efficiently predic
                 </span>
 
                 <span class="author-block">
-                  <a href="https://github.com/hugoycj" target="_blank">Chongjie Ye</a><sup>1,2</sup>,
+                  <a href="https://github.com/hugoycj" target="_blank">Chongjie Ye</a><sup>2,3,1</sup>,
                 </span>
 
                 <span class="author-block">
@@ -298,7 +298,8 @@ To bridge this gap, we propose LoFA, a general framework that efficiently predic
                       </div>
                     </div>
                     <span class="eql-cntrb">
-                      <small><br><sup>*</sup>Indicates Equal Contribution</small>
+                      <small><br><sup>*</sup>Equal Contribution</small>
+                      <small><br><sup>†</sup>Corresponding Author</small>
                     </span>
 
                   </div>
@@ -323,7 +324,7 @@ To bridge this gap, we propose LoFA, a general framework that efficiently predic
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (coming soon)</span>
                   </a>
                 </span>
             </div>
@@ -335,18 +336,55 @@ To bridge this gap, we propose LoFA, a general framework that efficiently predic
 </section>
 
 
-<!-- Teaser o,age-->
+<!-- Section 1: Personalized Prior -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static\images\teaser.png" alt="Teaser image" class="publication-banner-img">
 
-      <h2 class="subtitle has-text-centered">
-        We propose <span class="lofa-highlight">LoFA</span>, a general framework that predicts personalized priors (i.e., LoRA weights) within seconds for fast adaptation of visual generative models.
+      <!-- Title for top image -->
+      <h2 class="teaser-section-title is-3">
+        Personalized Prior Formulation
+      </h2>
+
+      <!-- Top Image -->
+      <img src="static/images/prior.png"
+           alt="Common Prior"
+           class="publication-banner-img tight-top-img">
+
+      <!-- Description under top image -->
+      <h2 class="subtitle has-text-centered pp-caption">
+        Although general generative models learn a <span class="highlight-common">common prior</span> from massive data, this prior often misaligns with user-specific needs and distributions. To address this, we introduce a framework that <span class="highlight-red">rapidly predicts personalized priors</span> tailored to individual users.
+      </h2>
+
     </div>
   </div>
 </section>
-<!-- End teaser image -->
+
+
+<!-- Section 2: Direct Prediction -->
+<section class="hero teaser">
+  <div class="container">
+    <div class="hero-body">
+
+      <!-- Title for bottom image -->
+      <h2 class="teaser-section-title is-3">
+        Directly Predict Personalized Prior
+      </h2>
+
+      <!-- Bottom Image -->
+      <img src="static/images/teaser.png"
+           alt="Personalized Prior"
+           class="wide-teaser">
+
+      <!-- Description -->
+      <h2 class="subtitle has-text-centered teaser-caption">
+        We propose <span class="lofa-highlight">LoFA</span>, a general framework that predicts personalized priors (i.e., LoRA weights) within seconds for fast adaptation of visual generative models.
+      </h2>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -389,38 +427,36 @@ To bridge this gap, we propose LoFA, a general framework that efficiently predic
 </section>
 <!-- End Method Overview -->
 
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Qualitative Comparison</h2>
+      <h2 class="title is-3">Comparision on Text Conditioned Human Action Video Generation</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static\videos\text_cond.mp4" type="video/mp4">
+            <source src="static\videos\text_1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static\videos\pose_cond.mp4" type="video/mp4">
+            <source src="static\videos\text_2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static\videos\style.mp4" type="video/mp4">
+            <source src="static\videos\text_3.mp4" type="video/mp4">
           </video>
         </div>
 
-        <!-- ✅ 新增图片 item -->
-        <div class="item item-image4">
-          <img src="static\images\dreambooth.png" alt="Additional Result" loading="lazy">
-          <h2 class="subtitle has-text-centered">
-            Your image description.
-          </h2>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\text_4.mp4" type="video/mp4">
+          </video>
         </div>
 
       </div>
@@ -428,6 +464,102 @@ To bridge this gap, we propose LoFA, a general framework that efficiently predic
   </div>
 </section>
 <!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"> Comparision on Pose Conditioned Human Action Video Generation </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\pose_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\pose_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\pose_3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video3">
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\pose_4.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparision on Text-to-Video Stylization</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\style_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\style_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static\videos\style_3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparision on Identity-Personalized Image Generation</h2>
+
+      <div id="extra-carousel" class="carousel results-carousel">
+
+        <!-- item 1 -->
+        <div class="item item-image1">
+          <img src="static\images\dreambooth_1.png" alt="Additional Result" loading="lazy">
+        </div>
+
+        <!-- item 2 -->
+        <div class="item item-image2">
+          <img src="static\images\dreambooth_2.png" alt="Additional Result" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Comparision on Text-to-Video Stylization -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">

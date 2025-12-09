@@ -793,10 +793,83 @@ a:focus {
   box-shadow: var(--shadow-xl);
 }
 
-/* 描述文字 */
+
+
+.tight-top-img {
+  margin-bottom: 0rem !important;
+}
+
+/* 让 teaser 中间那行说明更靠近图片 */
+.tight-top-caption {
+  margin-top: -1.0rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.teaser-section-title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 650 !important;
+  color: var(--text-primary) !important;
+  font-size: 1.8rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.5rem !important;
+  text-align: center !important;   /* 改成 center，或者直接删掉这一行 */
+}
+
+.wide-teaser {
+  max-width: 1400px !important; /* 或更大，例如 1600 */
+}
+
+.teaser .subtitle.teaser-caption {
+  font-size: 1.35rem !important;
+  font-weight: 400 !important;
+  color: #374151 !important;
+  line-height: 1.4 !important;
+  
+  /* 关键：让它变宽（默认 container 太窄） */
+  max-width: 1200px !important;     /* 你最需要的参数，让文字更横向展开 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: left !important;       /* 左对齐 */
+  
+  letter-spacing: 0.2px !important;
+  margin-top: 1.0rem !important;
+}
+
 .method-overview-description {
-  margin-top: 1.5rem;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: var(--text-secondary);
+  margin-top: 1.5rem !important;
+  font-size: 1.30rem !important;     /* 1.05 → 1.30，显著更清晰 */
+  line-height: 1.8 !important;      /* 原来太松，现在更紧凑 */
+  color: var(--text-secondary);         /* 深灰，和两张大图 caption 统一 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  letter-spacing: 0.15px !important; /* 字体更锐利 */
+}
+
+.pp-caption {
+  font-size: 1.35rem !important;
+  font-weight: 400 !important;
+  color: #374151 !important;
+  line-height: 1.45 !important;
+
+  /* 关键：让文字比 container 还宽 */
+  max-width: 1600px !important;   /* 可调：1200 ~ 1500 */
+  width: 110%;
+  
+  text-align: left !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 1.2rem !important;
+  letter-spacing: 0.2px !important;
+}
+
+.highlight-red {
+  color: #ff3b30 !important;
+  font-weight: 700 !important;
+}
+
+.highlight-common {
+  color: #7C3AED !important;     /* 亮紫色 */
+  font-weight: 700 !important;   /* 加粗，与图中类似 */
 }
